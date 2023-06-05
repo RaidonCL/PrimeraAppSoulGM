@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-header>
+    <ion-card-title> Datos personales
+  </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+      <ion-item>
+        <ion-label> Nombre: </ion-label>
+        <ion-input [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Correo electrónico: </ion-label>
+        <ion-input [(ngModel)]="email" type="email" placeholder="Correo electrónico"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label> País: </ion-label>
+        <ion-input [(ngModel)]="pais" placeholder="País"></ion-input>
+      </ion-item>
+
+      <ion-list>
+        <ion-item>
+          <ion-toggle>PC</ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-toggle>Nintendo</ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-toggle>PlayStation</ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-toggle>Xbox</ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-toggle>Android</ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-toggle>IOS</ion-toggle>
+        </ion-item>
+      </ion-list>
+
+  </ion-card-content>
+
+  <ion-button expand="full" (click)="guardarPerfil()">Guardar</ion-button>
+</ion-content>
+
+
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="home()" tab="home">
+      <ion-icon name="game-controller-outline"></ion-icon>
+      Noticias
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

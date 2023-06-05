@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Noticias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+
+
+<ion-content >
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Perfil</ion-label>
+      </ion-item>
+      <div class="ion-padding" (click)="perfil()"slot="content">Datos</div>
+      <div class="ion-padding" (click)="login()"  slot="content">Cerrar sesion  </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>Plataformas</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">PC</div>
+      <div class="ion-padding"(click)="nintendo()" slot="content">Nintendo</div>
+      <div class="ion-padding" slot="content">PlayStation</div>
+      <div class="ion-padding" slot="content">Xbox</div>
+      <div class="ion-padding" slot="content">Android</div>
+      <div class="ion-padding" slot="content">IOS</div>
+    </ion-accordion>
+    
+  </ion-accordion-group>
+
+  <iframe width="412" height="167" src="https://www.youtube.com/embed/jyZa0vUxi8U?start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+</ion-content>
+

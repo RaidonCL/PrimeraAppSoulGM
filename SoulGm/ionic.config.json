@@ -1,0 +1,7 @@
+{
+  "name": "SoulGm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

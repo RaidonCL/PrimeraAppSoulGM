@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Nintendo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<div class="container">
+  <div class="centered-content">
+    <ion-card>
+      <img alt="Zelda" src="https://media.vandal.net/m/9-2022/202292911251929_1.jpg" />
+      <ion-card-header>
+        <ion-card-title>Locura por Zelda</ion-card-title>
+        <ion-card-subtitle>Locura por nuevas canciones de zelda</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Youtube se llena de videos parodias musicales de The Legend of Zelda™: Tears of the Kingdom....
+      </ion-card-content>
+    </ion-card>
+  </div>
+</div>
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="home()" tab="home">
+      <ion-icon name="game-controller-outline"></ion-icon>
+      Noticias
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
