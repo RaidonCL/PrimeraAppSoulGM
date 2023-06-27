@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { Isoulgmm } from '../interfaces/isoulgmm';
+import { SsoulgmService } from '../services/ssoulgm.service';
 
 @Component({
   selector: 'app-registro',
@@ -12,12 +14,15 @@ import { Router } from '@angular/router';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class RegistroPage implements OnInit {
-  nombre: string='';
-  email: string='';
-  password: string='';
+
+  newSoulgm: Isoulgmm = {
+    nombre:'',
+    Correo:'',
+    Password:''
+  }
 
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private SoulgmServ:SsoulgmService) { }
 
   registro(){
     this.router.navigateByUrl('/home');
@@ -27,6 +32,11 @@ export class RegistroPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  crearSoulgm(){
+    this.SoulgmServ.crearSoulgm(this.newSoulgm).subscribe()
+
   }
 
 }

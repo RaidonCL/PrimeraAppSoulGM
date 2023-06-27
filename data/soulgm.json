@@ -1,19 +1,16 @@
 {
-  "posts": [
+  "Soulgm": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nombre": "Jorge",
+      "Correo": "jorge@test.cl",
+      "Password": 123456
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nombre": "Gustavo",
+      "Correo": "Gustavo@test.cl",
+      "Password": "123456789",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

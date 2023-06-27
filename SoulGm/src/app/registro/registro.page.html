@@ -5,22 +5,24 @@
 </ion-header>
 
 <ion-content>
+
   <ion-item>
     <ion-label position="floating">Nombre</ion-label>
-    <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    <ion-input type="text" name="txNombre" [(ngModel)]="newSoulgm.nombre" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Correo electronico</ion-label>
-    <ion-input type="email" [(ngModel)]="email"></ion-input>
+    <ion-input type="email" name="txCorreo" [(ngModel)]="newSoulgm.Correo" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" [(ngModel)]="password"></ion-input>
+    <ion-input type="password" name="txPassword" [(ngModel)]="newSoulgm.Password" required></ion-input>
   </ion-item>
 
-  <ion-button color="dark" (click)="registro()">Registrarse</ion-button>
-  <ion-button color="dark" (click)="login()">Iniciar Sesion</ion-button>
+
+  <ion-button expand="block" color="dark" (click) = "crearSoulgm()" (click)="registro()">Registrarse</ion-button>
+  <ion-button expand="block" color="dark" (click)="login()">Iniciar Sesion</ion-button>
 </ion-content>
 
