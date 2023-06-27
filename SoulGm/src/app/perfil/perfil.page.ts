@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class PerfilPage {
   nombre: string = "";
   email: string ="";
-  pais: string ="";
+  password: string ="";
 
   constructor(private router: Router) { }
 
