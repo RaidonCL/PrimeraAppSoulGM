@@ -5,12 +5,7 @@
       "nombre": "Jorge",
       "Correo": "jorge@test.cl",
       "Password": 123456
-    },
-    {
-      "nombre": "Gustavo",
-      "Correo": "Gustavo@test.cl",
-      "Password": "123456789",
-      "id": 2
     }
+
   ]
 }
