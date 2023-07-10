@@ -9,6 +9,7 @@ import { Isoulgmm } from '../interfaces/isoulgmm';
 @Injectable({
   providedIn: 'root'
 })
+
 export class SsoulgmService {
 
   constructor(private http:HttpClient) { }

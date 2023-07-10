@@ -1,0 +1,10 @@
+{
+  "Soulgm": [
+    {
+      "id": 1,
+      "nombre": "Jorge",
+      "Correo": "jorge@test.cl",
+      "Password": 123456
+    }
+  ]
+}
